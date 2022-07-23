@@ -1,0 +1,208 @@
+/* style awal */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+    font-family: 'play';
+}
+
+
+/* akhir style awal */
+
+
+
+
+/* styke hero */
+.hero-header {
+    /* border: 2px solid black; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header img {
+    width: 100%;
+}
+
+.hero-header a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-family: 'Shizuru', cursive;
+    font-size: calc(1vw + 2rem);
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px black;
+    text-align: center;
+}
+
+.hero-header a:hover {
+    color: rgb(255, 100, 20);
+
+}
+
+/* style hero */
+
+
+
+
+
+/* container */
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    animation: munculdariatas 2s 1000ms forwards;
+}
+
+.layanan h2 {
+    text-transform: capitalize;
+}
+
+.layanan.satu {
+    background-color: rgb(255, 101, 101);
+}
+
+.layanan.dua {
+    margin: 15px 0;
+    background-color: rgb(255, 155, 84);
+}
+
+.layanan.tiga {
+    margin: 15px 0;
+    background-color: rgb(98, 250, 255);
+}
+
+/* akhir contiainer */
+
+
+/* container satu */
+
+.container-satu {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 15px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.card .header {
+    background-color: gray;
+    height: 150px;
+    background-size: cover;
+}
+
+.card .header-satu {
+    background-image: url(img/gambar-dua.jpg);
+}
+
+.card .header-dua {
+    background-image: url(img/gambar-tiga.jpg);
+}
+
+.card .header-tiga {
+    background-image: url(img/gambar-satu.jpg);
+}
+
+.card .content {
+    text-align: center;
+    padding: 10px;
+}
+
+.card .content h1 {
+    text-transform: capitalize;
+    color: darkred;
+}
+
+
+/* akhir container satu */
+
+
+/* footer  */
+.footer {
+    height: 25px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+}
+
+/* akhir footer */
+
+
+/* animation */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes munculdariatas {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* akhir animation */
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .hero-header {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-header a {
+        animation: fade 5s;
+    }
+
+    .hero-header img {
+        opacity: 0;
+        height: 2px;
+    }
+
+    .container {
+        margin: 50px 0;
+    }
+
+
+    .card {
+        width: 50%;
+    }
+
+}
+
+/* akhir responsive */
